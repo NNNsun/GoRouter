@@ -39,7 +39,7 @@ class AuthNotifier extends ChangeNotifier {
     });
   }
 
-  String? _redirectLogic(GoRouterState state) {
+  String? _redirectLogic(BuildContext context, GoRouterState state) {
     // UserModel의 인스턴스 또는 null
     final user = ref.read(userProvider);
     // 로그인을 하려는 상태인지
